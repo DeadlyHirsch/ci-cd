@@ -32,6 +32,7 @@ jobs:
             #- name: Automated Tests
             #  run: dotnet test Weather.Tests -c Release --no-build
 
+            # Publish
             - name: Publish App
               run: dotnet publish -c Release -o ./out Weather-API/CICD.sln
 
